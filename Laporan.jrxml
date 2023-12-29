@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a74b076c-0a4f-45a0-8eb3-2a57b7f95dfa">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM data_pengunjung]]>
+	</queryString>
+	<field name="ID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="ID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_pengunjung"/>
+	</field>
+	<field name="NAMA" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NAMA"/>
+		<property name="com.jaspersoft.studio.field.label" value="NAMA"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_pengunjung"/>
+	</field>
+	<field name="NO_TELP" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NO_TELP"/>
+		<property name="com.jaspersoft.studio.field.label" value="NO_TELP"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_pengunjung"/>
+	</field>
+	<field name="Tanggal" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Tanggal"/>
+		<property name="com.jaspersoft.studio.field.label" value="Tanggal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_pengunjung"/>
+	</field>
+	<field name="KATEGORI" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="KATEGORI"/>
+		<property name="com.jaspersoft.studio.field.label" value="KATEGORI"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_pengunjung"/>
+	</field>
+	<field name="TOTAL HARGA" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TOTAL HARGA"/>
+		<property name="com.jaspersoft.studio.field.label" value="TOTAL HARGA"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_pengunjung"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="100" y="40" width="360" height="30" uuid="b0418578-e316-4ece-b978-56df3ecbbd88"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA PENGUNJUNG]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="20" height="30" uuid="e604cec2-b9af-4a68-b214-be7e2e0e7215"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="10" width="40" height="30" uuid="d2caf40f-08b5-4cae-80e2-e3e31dda82fe"/>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="10" width="80" height="30" uuid="9ced10e5-bc3e-4ca0-9c7c-c8ca062cb618"/>
+				<text><![CDATA[NO TELEPON]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="10" width="60" height="30" uuid="8526c574-b7e2-4bf7-8e7c-a8c16677161a"/>
+				<text><![CDATA[TANGGAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="10" width="70" height="30" uuid="80264d56-8a89-4ed8-bc82-6389d9b01358"/>
+				<text><![CDATA[KATEGORI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="10" width="75" height="30" uuid="d30c3329-d820-4a49-bfc0-5f514d8ccee4"/>
+				<text><![CDATA[TOTAL HARGA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="80" height="30" uuid="1f941228-43c2-4ab8-a101-85cfa4d4e02e"/>
+				<textFieldExpression><![CDATA[$F{ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="100" height="30" uuid="e1cfdd71-2d4f-4cad-b677-2d00c24dacc6"/>
+				<textFieldExpression><![CDATA[$F{NO_TELP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="100" height="30" uuid="dc349372-7ba1-40fc-a838-531595209599"/>
+				<textFieldExpression><![CDATA[$F{NAMA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="100" height="30" uuid="fa472a46-8df7-4dbd-97ed-977591dc9815"/>
+				<textFieldExpression><![CDATA[$F{Tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="100" height="30" uuid="ca02fcb1-8fd9-4d90-8462-d9aca03c9773"/>
+				<textFieldExpression><![CDATA[$F{KATEGORI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="100" height="30" uuid="e8c590b5-84e6-4ce4-ae53-3f519162e801"/>
+				<textFieldExpression><![CDATA[$F{TOTAL HARGA}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
